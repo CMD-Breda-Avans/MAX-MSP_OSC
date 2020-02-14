@@ -1,2 +1,2 @@
-# MAX-MSP-OSC
+# MAX/MSP - OSC
 OSC apps with Max/MSP patches
