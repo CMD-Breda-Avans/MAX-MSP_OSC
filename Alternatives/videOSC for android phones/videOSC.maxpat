@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 133.0, 878.0, 701.0 ],
+		"rect" : [ 63.0, 100.0, 970.0, 701.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,11 +40,258 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 1,
+							"revision" : 10,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 152.0, 256.0, 753.0, 531.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "Default Max 7",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"elementcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"floatoutput" : 1,
+									"id" : "obj-27",
+									"knobcolor" : [ 0.0, 0.0, 1.0, 1.0 ],
+									"maxclass" : "slider",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 221.0, 345.0, 46.5, 152.0 ],
+									"size" : 1.0
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"elementcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"floatoutput" : 1,
+									"id" : "obj-26",
+									"knobcolor" : [ 0.0, 1.0, 0.0, 1.0 ],
+									"maxclass" : "slider",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 126.5, 345.0, 50.0, 152.0 ],
+									"size" : 1.0
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"elementcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"floatoutput" : 1,
+									"id" : "obj-18",
+									"knobcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
+									"maxclass" : "slider",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 32.0, 340.0, 45.0, 156.0 ],
+									"size" : 1.0
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-4",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 221.0, 297.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-3",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 126.5, 297.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-2",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 32.0, 297.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"annotation" : "## Grab webcam video for VIZZIE input ##",
+									"bgmode" : 1,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-17",
+									"lockeddragscroll" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "vz.grabbr.maxpat",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "jit_gl_texture" ],
+									"patching_rect" : [ 32.0, 9.0, 346.0, 158.0 ],
+									"prototypename" : "pixl",
+									"varname" : "grabbr",
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"annotation" : "## Convert R, G, and B video components to VIZZIE data ##",
+									"bgmode" : 1,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-16",
+									"lockeddragscroll" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "vz.analyzr.maxpat",
+									"numinlets" : 5,
+									"numoutlets" : 3,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "", "", "" ],
+									"patching_rect" : [ 32.0, 177.0, 208.0, 113.0 ],
+									"prototypename" : "pixl",
+									"varname" : "analyzr",
+									"viewvisibility" : 1
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-16", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-16", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-18", 0 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-27", 0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 569.0, 97.536270141601562, 163.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p colorTracking with webcam",
+					"varname" : "colorTracking"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 244.852035522460938, 292.359588623046875, 41.0, 22.0 ],
+					"patching_rect" : [ 219.852035522460938, 295.359588623046875, 41.0, 22.0 ],
 					"text" : "s blue"
 				}
 
@@ -55,7 +302,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 156.10203742980957, 292.359588623046875, 49.0, 22.0 ],
+					"patching_rect" : [ 131.10203742980957, 295.359588623046875, 49.0, 22.0 ],
 					"text" : "s green"
 				}
 
@@ -66,20 +313,20 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 73.35203742980957, 292.359588623046875, 35.0, 22.0 ],
+					"patching_rect" : [ 48.35203742980957, 295.359588623046875, 35.0, 22.0 ],
 					"text" : "s red"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 1,
 					"id" : "obj-17",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 483.615997314453125, 547.99072265625, 269.70063591003418, 47.0 ],
-					"presentation_linecount" : 5,
+					"patching_rect" : [ 348.615997314453125, 494.99072265625, 289.0, 47.0 ],
 					"text" : "If version 2 does not work then try version 1.1 \nYou can find it on apkpure but have to manual install it."
 				}
 
@@ -92,8 +339,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 371.9609375, 547.99072265625, 113.0, 76.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 343.9609375, 547.99072265625, 116.0, 76.0 ],
 					"text" : ";\rmax launchbrowser https://apkpure.com/videosc/net.videosc/versions"
 				}
 
@@ -105,8 +351,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 210.35203742980957, 508.99072265625, 141.0, 33.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 182.35203742980957, 508.99072265625, 141.0, 33.0 ],
 					"text" : "Click to go to instructions"
 				}
 
@@ -119,8 +364,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 210.35203742980957, 547.99072265625, 146.0, 76.0 ],
-					"presentation_linecount" : 5,
+					"patching_rect" : [ 182.35203742980957, 547.99072265625, 146.0, 76.0 ],
 					"text" : ";\rmax launchbrowser https://pustota.basislager.org/coding/videosc/videosc-the-interface/"
 				}
 
@@ -212,11 +456,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-75",
-					"linecount" : 8,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 478.77996826171875, 371.663177490234375, 150.0, 114.0 ],
+					"patching_rect" : [ 678.77996826171875, 295.359588623046875, 263.0, 60.0 ],
 					"text" : "The data from each outlet needs to unpacked depending on what's coming out of it.\nThis one spits out 3 floating point numbers orientation data x y z of your phone. "
 				}
 
@@ -735,7 +979,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 312.60205078125, 250.359603881835938, 87.0, 22.0 ],
+					"patching_rect" : [ 287.60203742980957, 241.359603881835938, 87.0, 22.0 ],
 					"text" : "s RAWsensors"
 				}
 
@@ -757,7 +1001,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 659.0, 1174.0, 524.0 ],
+						"rect" : [ 530.0, 79.0, 1174.0, 524.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1363,7 +1607,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 103.109039306640625, 46.724300384521484, 171.242996215820312, 33.0 ],
+					"patching_rect" : [ 78.109039306640625, 49.724300384521484, 171.242996215820312, 33.0 ],
 					"text" : "Raw data is received in Max with the udpreceive object"
 				}
 
@@ -1375,7 +1619,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 287.496917724609375, 123.321311950683594, 175.560745239257812, 60.0 ],
+					"patching_rect" : [ 260.496917724609375, 97.536270141601562, 175.560745239257812, 60.0 ],
 					"text" : "Print data in Max console (don't keep on for long because your console window will stack overflow"
 				}
 
@@ -1386,7 +1630,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.267925262451172, 59.724300384521484, 55.0, 20.0 ],
+					"patching_rect" : [ 20.267925262451172, 62.724300384521484, 55.0, 20.0 ],
 					"text" : "On / Off"
 				}
 
@@ -1398,7 +1642,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 58.35203742980957, 512.99072265625, 141.0, 33.0 ],
+					"patching_rect" : [ 21.35203742980957, 508.99072265625, 141.0, 33.0 ],
 					"text" : "Click to go to Playstore download link"
 				}
 
@@ -1411,7 +1655,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 49.35203742980957, 547.99072265625, 141.0, 76.0 ],
+					"patching_rect" : [ 21.35203742980957, 547.99072265625, 141.0, 76.0 ],
 					"text" : ";\rmax launchbrowser https://play.google.com/store/apps/details?id=net.videosc&hl=nl"
 				}
 
@@ -1423,7 +1667,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 227.852035522460938, 238.359603881835938, 75.0, 22.0 ],
+					"patching_rect" : [ 202.852035522460938, 241.359603881835938, 75.0, 22.0 ],
 					"text" : "slide 10. 10."
 				}
 
@@ -1435,7 +1679,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 143.10203742980957, 238.359603881835938, 75.0, 22.0 ],
+					"patching_rect" : [ 118.10203742980957, 241.359603881835938, 75.0, 22.0 ],
 					"text" : "slide 10. 10."
 				}
 
@@ -1447,7 +1691,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 58.35203742980957, 238.359603881835938, 75.0, 22.0 ],
+					"patching_rect" : [ 33.35203742980957, 241.359603881835938, 75.0, 22.0 ],
 					"text" : "slide 10. 10."
 				}
 
@@ -1464,7 +1708,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 227.852035522460938, 325.359588623046875, 46.5, 152.0 ],
+					"patching_rect" : [ 202.852035522460938, 328.359588623046875, 46.5, 152.0 ],
 					"size" : 1.0
 				}
 
@@ -1481,7 +1725,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 143.10203742980957, 325.359588623046875, 50.0, 152.0 ],
+					"patching_rect" : [ 118.10203742980957, 328.359588623046875, 50.0, 152.0 ],
 					"size" : 1.0
 				}
 
@@ -1498,7 +1742,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 58.35203742980957, 321.359588623046875, 45.0, 156.0 ],
+					"patching_rect" : [ 33.35203742980957, 324.359588623046875, 45.0, 156.0 ],
 					"size" : 1.0
 				}
 
@@ -1511,7 +1755,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 57.417457580566406, 81.551399230957031, 24.0, 24.0 ]
+					"patching_rect" : [ 32.417457580566406, 84.551399230957031, 24.0, 24.0 ]
 				}
 
 			}
@@ -1522,7 +1766,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 57.417457580566406, 169.919448852539062, 54.0, 22.0 ],
+					"patching_rect" : [ 32.417457580566406, 172.919448852539062, 54.0, 22.0 ],
 					"text" : "gate 1 0"
 				}
 
@@ -1548,7 +1792,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 227.852035522460938, 265.359588623046875, 50.0, 22.0 ]
+					"patching_rect" : [ 202.852035522460938, 268.359588623046875, 50.0, 22.0 ]
 				}
 
 			}
@@ -1561,7 +1805,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 143.10203742980957, 265.359588623046875, 50.0, 22.0 ]
+					"patching_rect" : [ 118.10203742980957, 268.359588623046875, 50.0, 22.0 ]
 				}
 
 			}
@@ -1574,7 +1818,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 58.35203742980957, 265.359588623046875, 50.0, 22.0 ]
+					"patching_rect" : [ 33.35203742980957, 268.359588623046875, 50.0, 22.0 ]
 				}
 
 			}
@@ -1585,7 +1829,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 58.35203742980957, 207.359603881835938, 273.25, 22.0 ],
+					"patching_rect" : [ 33.35203742980957, 210.359603881835938, 273.25, 22.0 ],
 					"text" : "route /vosc/red1 /vosc/green1 /vosc/blue1"
 				}
 
@@ -1598,7 +1842,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 227.852035522460938, 96.054954528808594, 24.0, 24.0 ]
+					"patching_rect" : [ 202.852035522460938, 99.054954528808594, 24.0, 24.0 ]
 				}
 
 			}
@@ -1608,7 +1852,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 227.852035522460938, 161.321319580078125, 63.0, 22.0 ],
+					"patching_rect" : [ 202.852035522460938, 164.321319580078125, 63.0, 22.0 ],
 					"text" : "print RAW"
 				}
 
@@ -1620,7 +1864,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 227.852035522460938, 132.536270141601562, 54.0, 22.0 ],
+					"patching_rect" : [ 202.852035522460938, 135.536270141601562, 54.0, 22.0 ],
 					"text" : "gate 1 0"
 				}
 
@@ -1632,7 +1876,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 92.417457580566406, 81.551399230957031, 104.0, 22.0 ],
+					"patching_rect" : [ 67.417457580566406, 84.551399230957031, 104.0, 22.0 ],
 					"text" : "udpreceive 50000"
 				}
 
@@ -1649,7 +1893,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 1 ],
-					"midpoints" : [ 101.917457580566406, 127.824213564395905, 272.352035522460938, 127.824213564395905 ],
+					"midpoints" : [ 76.917457580566406, 130.824213564395905, 247.352035522460938, 130.824213564395905 ],
 					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -1895,7 +2139,116 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
+		"parameters" : 		{
+			"obj-31::obj-16::obj-1" : [ "textbutton[2]", "textbutton[1]", 0 ],
+			"obj-31::obj-16::obj-17" : [ "pictctrl[36]", "pictctrl[1]", 0 ],
+			"obj-31::obj-16::obj-19" : [ "pictctrl[35]", "pictctrl[1]", 0 ],
+			"obj-31::obj-16::obj-2::obj-23" : [ "gswitch2[2]", "gswitch2", 0 ],
+			"obj-31::obj-16::obj-44" : [ "Red mode", "Red mode", 0 ],
+			"obj-31::obj-16::obj-46" : [ "pictctrl[34]", "pictctrl[1]", 0 ],
+			"obj-31::obj-16::obj-48" : [ "Green mode", "Green mode", 0 ],
+			"obj-31::obj-16::obj-50" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
+			"obj-31::obj-16::obj-54" : [ "Blue mode", "Blue mode", 0 ],
+			"obj-31::obj-16::obj-58" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-31::obj-16::obj-6" : [ "pictctrl[37]", "pictctrl[1]", 0 ],
+			"obj-31::obj-16::obj-65" : [ "pictctrl[84]", "pictctrl[1]", 0 ],
+			"obj-31::obj-17::obj-38" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
+			"obj-31::obj-17::obj-39" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-31::obj-17::obj-64::obj-18" : [ "vdevnum", "vdevnum", 0 ],
+			"obj-31::obj-17::obj-64::obj-29" : [ "formatnum", "formatnum", 10 ],
+			"obj-31::obj-17::obj-64::obj-40" : [ "Mirror state", "Mirror state", 0 ],
+			"obj-31::obj-17::obj-64::obj-5" : [ "Available devices", "Available devices", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-31::obj-17::obj-38" : 				{
+					"parameter_longname" : "pictctrl[4]"
+				}
+,
+				"obj-31::obj-17::obj-39" : 				{
+					"parameter_longname" : "pictctrl[3]"
+				}
+,
+				"obj-31::obj-17::obj-64::obj-5" : 				{
+					"parameter_invisible" : 0,
+					"parameter_modmode" : 0,
+					"parameter_unitstyle" : 10
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "vz.analyzr.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video-handler.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-outputdim.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "data-handler.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-object.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-global.js",
+				"bootpath" : "C74:/packages/Vizzie/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "exact_menu.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vz.grabbr.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "grabbr_controls.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-pwindow.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-blackframe.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0
 	}
 
