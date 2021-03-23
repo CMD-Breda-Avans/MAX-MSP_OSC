@@ -1,4 +1,4 @@
-Download the FACE OSC app here:
+ Download the FACE OSC app here:
 
 https://github.com/kylemcdonald/ofxFaceTracker/releases
 
