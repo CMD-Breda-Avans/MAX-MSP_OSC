@@ -8,10 +8,13 @@ More info on the ZigSim developer site: https://1-10.github.io/zigsim/
 For iphones and android phones we can use the same Max patches!
 
 ZIGSIM Iphone App
+
 Free version: https://apps.apple.com/us/app/zig-sim-pro/id1481556614
+
 Pro version: https://apps.apple.com/us/app/zig-sim-pro/id1481556614
 
 ZIGSIM ANDROID app
+
 https://play.google.com/store/apps/details?id=com.oneten.drive.zig_sim&hl=nl&gl=US&pli=1
 
 In the Alternatives / extra's folder
