@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 10,
+			"minor" : 5,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 135.0, 207.0, 892.0, 531.0 ],
+		"rect" : [ 134.0, 463.0, 892.0, 531.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,12 +41,12 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-10",
-					"linecount" : 9,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.666668593883514, 289.666677057743073, 683.0, 127.0 ],
-					"text" : "How to use:\n1. download the ZigSim app from the appstore (iPhone) or download the app .apk file for android manually. See link in repository or open readme in module) \n2. your phone and comp should be on same LAN network. This can be normal wifi or a you can connect your comp to your phone via wifi or bluetooth tethering)\n3. in the ZigSim app on your phone setup correct ip adres (the one your computer has) and the right port; default port = 50000. \n4. press OFF / ON button and press individual ON / Off button per sensor (each sensor has it's own colored outlet)\n5. select iPhone, Android or iPhone4 in module dependingh on your phone.\n6. Which sensors work depends on your phone."
+					"patching_rect" : [ 9.666668593883514, 277.666677057743073, 683.0, 114.0 ],
+					"text" : "How to use:\n1. download the ZigSim app from the appstore or Playstore.\n2. your phone and comp should be on same LAN network. This can be normal wifi or a you can connect your comp to your phone via hotspot)\n3. in the ZigSim app on your phone setup correct ip adres (the one your computer has) and the right port; default port = 50000. \n4. press OFF / ON button and press individual ON / Off button per sensor (each sensor has it's own colored outlet)\n5. select iPhone, Android or iPhone4 in module dependingh on your phone.\n6. Which sensors work depends on your phone."
 				}
 
 			}
@@ -84,6 +84,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-8",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "source.zigsim.maxpat",
 					"numinlets" : 0,
@@ -94,8 +95,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -168,6 +169,13 @@
 									"patching_rect" : [ 102.5, 341.032210282581332, 141.181641202655783, 18.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 868.302605336137958, 51.118147782581332, 135.629553000000101, 18.0 ],
+									"saved_attribute_attributes" : 									{
+										"textcolor" : 										{
+											"expression" : ""
+										}
+
+									}
+,
 									"text" : "Switch  ON for sensor readout",
 									"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 									"textjustification" : 0
@@ -231,6 +239,13 @@
 									"patching_rect" : [ 623.999999797344231, 37.799951172853469, 141.181641202655783, 29.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 439.277789987274161, 31.032210282581325, 214.629553000000044, 18.0 ],
+									"saved_attribute_attributes" : 									{
+										"textcolor" : 										{
+											"expression" : ""
+										}
+
+									}
+,
 									"text" : "Switch  for Android or iPhone 4 compatibility",
 									"textcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 									"textjustification" : 0
@@ -253,6 +268,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 14.511175984558108, 29.032210222976687, 71.099999999999994, 19.000000059604648 ],
 									"saved_attribute_attributes" : 									{
+										"labeltextcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "val1", "" ],
 											"parameter_longname" : "live.text",
@@ -295,6 +314,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 998.418748736380849, 226.730891282581325, 9.563817977905273, 10.441679236755419 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[21]",
@@ -323,6 +350,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 968.267311751842499, 127.423656282581334, 44.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
+										"activeneedlecolor" : 										{
+											"expression" : ""
+										}
+,
+										"textcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_initial" : [ 12.0 ],
 											"parameter_initial_enable" : 1,
@@ -505,6 +540,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 16.166666984558105, 51.118147782581332, 69.444508999999996, 18.399999976158142 ],
 									"saved_attribute_attributes" : 									{
+										"activetextcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_longname" : "write[15]",
@@ -788,6 +827,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 965.593407011320096, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[33]",
@@ -817,6 +864,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 932.768065286259343, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[70]",
@@ -846,6 +901,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 899.942723561198591, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[35]",
@@ -925,6 +988,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 878.642862984558064, 174.423686282581343, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[11]",
 											"parameter_mmax" : 10000.0,
@@ -953,6 +1020,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 878.642862984558064, 157.423656282581334, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[56]",
 											"parameter_mmax" : 10000.0,
@@ -981,6 +1052,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 878.642862984558064, 140.023753282581339, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[13]",
 											"parameter_mmax" : 10000.0,
@@ -1067,6 +1142,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 867.117381836137838, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[30]",
@@ -1096,6 +1179,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 834.292040111077085, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[31]",
@@ -1154,6 +1245,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 794.378031984558106, 154.323771282581333, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[18]",
@@ -1184,6 +1279,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 794.378031984558106, 140.023753282581339, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[68]",
@@ -1322,6 +1421,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 801.466698386016333, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[69]",
@@ -1362,6 +1465,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 730.882853984558096, 140.423869282581336, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[40]",
 											"parameter_mmax" : 10000.0,
@@ -1476,6 +1583,26 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 656.12540698455814, 170.823741282581324, 65.0, 41.0 ],
 									"saved_attribute_attributes" : 									{
+										"slidercolor" : 										{
+											"expression" : ""
+										}
+,
+										"textcolor" : 										{
+											"expression" : ""
+										}
+,
+										"tribordercolor" : 										{
+											"expression" : ""
+										}
+,
+										"tricolor" : 										{
+											"expression" : ""
+										}
+,
+										"trioncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "force",
 											"parameter_mmax" : 7.0,
@@ -1509,6 +1636,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 768.64135666095558, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[28]",
@@ -1580,6 +1715,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 735.816014935894827, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[27]",
@@ -1620,6 +1763,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 656.12540698455814, 154.323771282581333, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[36]",
 											"parameter_mmax" : 10000.0,
@@ -1691,6 +1838,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 670.165331485773322, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[26]",
@@ -1731,6 +1886,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 573.230875984558111, 154.323771282581333, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[35]",
 											"parameter_mmax" : 10000.0,
@@ -1786,6 +1945,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 604.514648035651817, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[25]",
@@ -1815,6 +1982,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 571.689306310591064, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[24]",
@@ -1873,6 +2048,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 491.10734098455805, 153.823710282581317, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[23]",
@@ -1902,6 +2081,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 491.10734098455805, 137.923808282581319, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[15]",
@@ -1971,6 +2154,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 407.562597685287301, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[22]",
@@ -2011,6 +2202,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 256.204767984558089, 190.223674282581328, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[34]",
 											"parameter_mmax" : 10000.0,
@@ -2119,8 +2314,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 10,
+											"minor" : 5,
+											"revision" : 3,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2239,6 +2434,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 16.166666984558105, 75.488869783260355, 69.444508999999996, 18.399999976158142 ],
 									"saved_attribute_attributes" : 									{
+										"activetextcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_longname" : "live.text[1]",
@@ -2780,6 +2979,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 702.990673210834075, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[20]",
@@ -2809,6 +3016,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 637.339989760712569, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[19]",
@@ -2838,6 +3053,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 538.863964585530312, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[16]",
@@ -2867,6 +3090,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 506.038622860469559, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[17]",
@@ -2896,6 +3127,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 473.213281135408806, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[13]",
@@ -2925,6 +3164,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 440.387939410348054, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[14]",
@@ -2954,6 +3201,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 374.737255960226548, 226.730876282581335, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[9]",
@@ -2983,6 +3238,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 341.911914235165796, 226.730876282581335, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[10]",
@@ -3012,6 +3275,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 309.086572510105043, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[11]",
@@ -3041,6 +3312,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 276.26123078504429, 226.730907282581342, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[6]",
@@ -3070,6 +3349,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 243.435889059983538, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[7]",
@@ -3099,6 +3386,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 210.610547334922757, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[8]",
@@ -3128,6 +3423,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 177.785205609861976, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[3]",
@@ -3157,6 +3460,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 144.959863884801194, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[4]",
@@ -3186,6 +3497,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 112.134522159740413, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[5]",
@@ -3215,6 +3534,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 79.309180434679647, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[2]",
@@ -3244,6 +3571,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 46.483838709618873, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button[1]",
@@ -3273,6 +3608,14 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 13.658496984558099, 226.730891282581325, 9.900002000000001, 10.25 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activebgoncolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_enum" : [ "off", "on" ],
 											"parameter_longname" : "live.button",
@@ -3613,6 +3956,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 656.12540698455814, 138.423625282581327, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[31]",
 											"parameter_mmax" : 10000.0,
@@ -3671,6 +4018,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 411.330088984558131, 154.323771282581333, 52.0, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[29]",
 											"parameter_mmax" : 10000.0,
@@ -3699,6 +4050,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 411.330088984558131, 138.423625282581327, 52.0, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[30]",
 											"parameter_mmax" : 10000.0,
@@ -3770,6 +4125,18 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 336.3547769845581, 154.323771282581333, 46.433788, 48.0 ],
 									"saved_attribute_attributes" : 									{
+										"activedialcolor" : 										{
+											"expression" : ""
+										}
+,
+										"activeneedlecolor" : 										{
+											"expression" : ""
+										}
+,
+										"textcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "angle[1]",
 											"parameter_mmax" : 360.0,
@@ -3798,6 +4165,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 339.004801984558128, 137.923808282581319, 41.133738999999998, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[26]",
 											"parameter_mmin" : -128.0,
@@ -3823,6 +4194,10 @@
 									"parameter_enable" : 1,
 									"patching_rect" : [ 494.814270000000022, 597.800170999999978, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[27]",
 											"parameter_mmax" : 10000.0,
@@ -3893,6 +4268,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 256.204767984558089, 173.823771282581333, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[22]",
 											"parameter_mmax" : 10000.0,
@@ -3921,6 +4300,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 256.204767984558089, 156.823741282581324, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[23]",
 											"parameter_mmax" : 10000.0,
@@ -3949,6 +4332,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 256.204767984558089, 139.423839282581326, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[24]",
 											"parameter_mmax" : 10000.0,
@@ -4091,6 +4478,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 573.230875984558111, 138.423625282581327, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[16]",
 											"parameter_mmax" : 10000.0,
@@ -4118,6 +4509,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 173.365732984558093, 173.823771282581333, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[7]",
 											"parameter_mmax" : 10000.0,
@@ -4146,6 +4541,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 173.365732984558093, 156.823741282581324, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[8]",
 											"parameter_mmax" : 10000.0,
@@ -4174,6 +4573,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 173.365732984558093, 139.423839282581326, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[9]",
 											"parameter_mmax" : 10000.0,
@@ -4247,6 +4650,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.666666984558105, 173.823741282581324, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[4]",
 											"parameter_mmax" : 10000.0,
@@ -4275,6 +4682,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.666666984558105, 156.823741282581324, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[5]",
 											"parameter_mmax" : 10000.0,
@@ -4303,6 +4714,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 10.666666984558105, 139.423839282581326, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[6]",
 											"parameter_mmax" : 10000.0,
@@ -4376,6 +4791,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 91.43333698455811, 173.823771282581333, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[3]",
 											"parameter_mmax" : 10000.0,
@@ -4404,6 +4823,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 91.43333698455811, 156.823771282581333, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[2]",
 											"parameter_mmax" : 10000.0,
@@ -4432,6 +4855,10 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 91.43333698455811, 139.423839282581326, 56.5, 15.0 ],
 									"saved_attribute_attributes" : 									{
+										"activebgcolor" : 										{
+											"expression" : ""
+										}
+,
 										"valueof" : 										{
 											"parameter_longname" : "live.numbox[1]",
 											"parameter_mmax" : 10000.0,
