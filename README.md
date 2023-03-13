@@ -22,9 +22,18 @@ OTHER OSC APPS (ANDROID ONLY)
 Other OSC apps for android phones are oscHook and EywSensorToOSC. These are also included in the repository. The have their own maxpatches and source files.
 
 Other OSC apps:
-Stagecaller https://www.disappointedpig.com/projects/stagecaller/
 
+StageCaller: Use OSC to trigger events on you mobile phone
 
+https://www.disappointedpig.com/projects/stagecaller/
+
+On Android:
 
 https://user-images.githubusercontent.com/45975088/224668302-4639c7d5-3f8d-47c1-979f-9081e4f6f7e5.mp4
+
+On iPhone:
+
+https://user-images.githubusercontent.com/45975088/224669481-bc33b86e-b29d-41a6-9ffb-61262dc15db1.mp4
+
+
 
