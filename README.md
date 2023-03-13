@@ -20,3 +20,11 @@ https://play.google.com/store/apps/details?id=com.oneten.drive.zig_sim&hl=nl&gl=
 In the Alternatives / extra's folder
 OTHER OSC APPS (ANDROID ONLY)
 Other OSC apps for android phones are oscHook and EywSensorToOSC. These are also included in the repository. The have their own maxpatches and source files.
+
+Other OSC apps:
+Stagecaller https://www.disappointedpig.com/projects/stagecaller/
+
+
+
+https://user-images.githubusercontent.com/45975088/224668302-4639c7d5-3f8d-47c1-979f-9081e4f6f7e5.mp4
+
